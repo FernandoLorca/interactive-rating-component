@@ -11,6 +11,12 @@ body {
   font-family: "Overpass", sans-serif;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 p {
   margin: 0;
   padding: 0;
@@ -28,10 +34,8 @@ ul {
   list-style: none;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.hidden {
+  display: none !important;
 }
 
 main {
@@ -40,6 +44,8 @@ main {
   justify-content: center;
   align-items: center;
   color: white;
+  display: flex;
+  flex-direction: column;
 }
 main .component {
   background: #53dcfb;
@@ -98,6 +104,17 @@ main button {
 }
 main button:hover {
   opacity: 0.75;
+}
+main .componentThanksyou {
+  background: #53dcfb;
+  background: -webkit-radial-gradient(top, #252d37, #121417);
+  background: -moz-radial-gradient(top, #252d37, #121417);
+  background: radial-gradient(to bottom, #252d37, #121417);
+  width: 40rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
 }
 
 /*# sourceMappingURL=custom.css.map */

@@ -1,0 +1,23 @@
+@mixin cardComponent() {
+  background: #53dcfb;
+  background: -webkit-radial-gradient(
+    top,
+    $secondaryDarkBlue,
+    $secondaryVeryDarkBlue
+  );
+  background: -moz-radial-gradient(
+    top,
+    $secondaryDarkBlue,
+    $secondaryVeryDarkBlue
+  );
+  background: radial-gradient(
+    to bottom,
+    $secondaryDarkBlue,
+    $secondaryVeryDarkBlue
+  );
+  width: 40rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}

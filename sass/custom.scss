@@ -1,5 +1,5 @@
 @import "./variables";
-@import "./componentFunction";
+@import "./components";
 
 html {
   box-sizing: border-box;
@@ -12,6 +12,12 @@ body {
   line-height: 1.5;
   background-color: $secondaryVeryDarkBlue;
   font-family: $fontFamily;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 p {
@@ -31,10 +37,8 @@ ul {
   list-style: none;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+.hidden {
+  display: none !important;
 }
 
 main {
@@ -43,29 +47,11 @@ main {
   justify-content: center;
   align-items: center;
   color: white;
+  display: flex;
+  flex-direction: column;
 
   .component {
-    background: #53dcfb;
-    background: -webkit-radial-gradient(
-      top,
-      $secondaryDarkBlue,
-      $secondaryVeryDarkBlue
-    );
-    background: -moz-radial-gradient(
-      top,
-      $secondaryDarkBlue,
-      $secondaryVeryDarkBlue
-    );
-    background: radial-gradient(
-      to bottom,
-      $secondaryDarkBlue,
-      $secondaryVeryDarkBlue
-    );
-    width: 40rem;
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
+    @include cardComponent;
   }
 
   h1 {
@@ -122,5 +108,9 @@ main {
 
   button:hover {
     opacity: 0.75;
+  }
+
+  .componentThanksyou {
+    @include cardComponent;
   }
 }
