@@ -1,3 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-size: 65.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
 
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+main .component {
+  background: #53dcfb;
+  background: -webkit-radial-gradient(top, #252d37, #121417);
+  background: -moz-radial-gradient(top, #252d37, #121417);
+  background: radial-gradient(to bottom, #252d37, #121417);
+  width: 40rem;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+main h1 {
+  margin-bottom: 1rem;
+}
+main p {
+  color: #7c8798;
+  margin-bottom: 2rem;
+}
+main .compoment__rates {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+main .compoment__rates .compoment__rates--numbersBox {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 100px;
+  background-color: #121417;
+  cursor: pointer;
+}
+main .compoment__rates .compoment__rates--numbersBox:hover {
+  opacity: 0.5;
+  transition: opacity ease 200ms;
+}
+main .compoment__rates .compoment__rates--numbersBox-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+main .compoment__rates .compoment__rates--numbersBox-number p {
+  color: #7c8798;
+  margin-bottom: -4px;
+}
+main button {
+  padding: 1rem 0;
+  background-color: hsl(25deg, 97%, 53%);
+  border: none;
+  border-radius: 100px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  transition: opacity ease 200ms;
+}
+main button:hover {
+  opacity: 0.75;
+}
 
 /*# sourceMappingURL=custom.css.map */

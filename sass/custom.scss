@@ -1,0 +1,132 @@
+//colores
+$primary: hsl(25, 97%, 53%);
+$secondaryLightGrey: #959eac;
+$secondaryMediumGrey: #7c8798;
+$secondaryDarkBlue: #252d37;
+$secondaryVeryDarkBlue: #121417;
+
+//fonts
+$fontFamily: "Overpass", sans-serif;
+$fontWeight: (
+  "light": 400,
+  "bold": 700,
+);
+
+html {
+  box-sizing: border-box;
+  font-size: 65.5%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: $secondaryVeryDarkBlue;
+  font-family: $fontFamily;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .component {
+    background: #53dcfb;
+    background: -webkit-radial-gradient(
+      top,
+      $secondaryDarkBlue,
+      $secondaryVeryDarkBlue
+    );
+    background: -moz-radial-gradient(
+      top,
+      $secondaryDarkBlue,
+      $secondaryVeryDarkBlue
+    );
+    background: radial-gradient(
+      to bottom,
+      $secondaryDarkBlue,
+      $secondaryVeryDarkBlue
+    );
+    width: 40rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+  }
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $secondaryMediumGrey;
+    margin-bottom: 2rem;
+  }
+
+  .compoment__rates {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+
+    .compoment__rates--numbersBox {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 100px;
+      background-color: $secondaryVeryDarkBlue;
+      cursor: pointer;
+    }
+
+    .compoment__rates--numbersBox:hover {
+      opacity: 0.5;
+      transition: opacity ease 200ms;
+    }
+
+    .compoment__rates--numbersBox-number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      p {
+        color: $secondaryMediumGrey;
+        margin-bottom: -4px;
+      }
+    }
+  }
+
+  button {
+    padding: 1rem 0;
+    background-color: $primary;
+    border: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: map-get($fontWeight, bold);
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition: opacity ease 200ms;
+  }
+
+  button:hover {
+    opacity: 0.75;
+  }
+}
