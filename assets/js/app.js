@@ -34,7 +34,7 @@ rates.forEach((mov) => {
 });
 
 //submit button
-button.addEventListener("click", () => {
-  thanksComponent.classList.remove("hidden");
-  mainComponent.classList.add("hidden");
-});
+// button.addEventListener("click", () => {
+//   thanksComponent.classList.remove("hidden");
+//   mainComponent.classList.add("hidden");
+// });

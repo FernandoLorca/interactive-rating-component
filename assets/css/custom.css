@@ -62,39 +62,52 @@ main .component {
   flex-direction: column;
   padding: 3rem;
 }
-main h1 {
+main .component .component__img {
+  width: 4rem;
+  height: 4rem;
+  background-color: #121417;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin-bottom: 2rem;
+}
+main .component img {
+  width: 1.4rem;
+}
+main .component h1 {
   margin-bottom: 1rem;
 }
-main p {
+main .component p {
   color: #7c8798;
   margin-bottom: 2rem;
 }
-main .compoment__rates {
+main .component .compoment__rates {
   display: flex;
   justify-content: space-between;
   padding: 2rem 0;
 }
-main .compoment__rates .compoment__rates--numberBox {
+main .component .compoment__rates .compoment__rates--numberBox {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers {
+main .component .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers {
   border-radius: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers button {
+main .component .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers button {
   background-color: #121417;
   cursor: pointer;
   width: 5rem;
   height: 3rem;
 }
-main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers button:hover {
+main .component .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers button:hover {
   opacity: 0.5;
 }
-main button {
+main .component button {
   padding: 1rem 0;
   background-color: #fb7413;
   border: none;
@@ -105,7 +118,7 @@ main button {
   cursor: pointer;
   transition: opacity ease 200ms;
 }
-main button:hover {
+main .component button:hover {
   opacity: 0.75;
 }
 main .componentThanksyou {

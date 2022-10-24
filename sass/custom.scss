@@ -56,61 +56,76 @@ main {
 
   .component {
     @include cardComponent;
-  }
 
-  h1 {
-    margin-bottom: 1rem;
-  }
+    .component__img {
+      width: 4rem;
+      height: 4rem;
+      background-color: $secondaryVeryDarkBlue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+    }
 
-  p {
-    color: $secondaryMediumGrey;
-    margin-bottom: 2rem;
-  }
+    img {
+      width: 1.4rem;
+    }
 
-  .compoment__rates {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem 0;
+    h1 {
+      margin-bottom: 1rem;
+    }
 
-    .compoment__rates--numberBox {
+    p {
+      color: $secondaryMediumGrey;
+      margin-bottom: 2rem;
+    }
+
+    .compoment__rates {
       display: flex;
       justify-content: space-between;
-      width: 100%;
+      padding: 2rem 0;
 
-      .compoment__rates--numberBox-numbers {
-        border-radius: 100px;
+      .compoment__rates--numberBox {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        width: 100%;
 
-        button {
-          background-color: $secondaryVeryDarkBlue;
-          cursor: pointer;
-          width: 5rem;
-          height: 3rem;
-        }
+        .compoment__rates--numberBox-numbers {
+          border-radius: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-        button:hover {
-          opacity: 0.5;
+          button {
+            background-color: $secondaryVeryDarkBlue;
+            cursor: pointer;
+            width: 5rem;
+            height: 3rem;
+          }
+
+          button:hover {
+            opacity: 0.5;
+          }
         }
       }
     }
-  }
 
-  button {
-    padding: 1rem 0;
-    background-color: $primary;
-    border: none;
-    border-radius: 100px;
-    color: white;
-    font-weight: map-get($fontWeight, bold);
-    letter-spacing: 0.3rem;
-    cursor: pointer;
-    transition: opacity ease 200ms;
-  }
+    button {
+      padding: 1rem 0;
+      background-color: $primary;
+      border: none;
+      border-radius: 100px;
+      color: white;
+      font-weight: map-get($fontWeight, bold);
+      letter-spacing: 0.3rem;
+      cursor: pointer;
+      transition: opacity ease 200ms;
+    }
 
-  button:hover {
-    opacity: 0.75;
+    button:hover {
+      opacity: 0.75;
+    }
   }
 
   .componentThanksyou {
