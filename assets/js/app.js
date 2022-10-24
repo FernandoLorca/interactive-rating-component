@@ -19,6 +19,14 @@ const checkActive = (e, activeRate = rates) => {
   }
 };
 
+//return the rate number
+//check the number on the element eith active class on and return it.
+const checkRateValue = e => {
+  e.classList.contains("active");
+
+  return console.log(e.textContent);
+};
+
 //first run the checkActive function adn then activate class active on selected rate.
 rates.forEach(mov => {
   mov.addEventListener("click", () => {
