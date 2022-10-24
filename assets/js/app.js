@@ -34,18 +34,13 @@ rates.forEach((mov) => {
   });
 });
 
-//thankyou rate functionality
-const changeChoosenRate = () => {
-  rateChoosen.textContent = rateValue;
-};
-
 //submit button
 button.addEventListener("click", () => {
   rates.forEach((mov) => {
     if (mov.classList.contains("active")) {
       thanksComponent.classList.remove("hidden");
       mainComponent.classList.add("hidden");
-      changeChoosenRate();
+      rateChoosen.textContent = rateValue;
     } else {
       button.textContent = "Choose a rate before submit";
       button.style.backgroundColor = "#7c8798";
