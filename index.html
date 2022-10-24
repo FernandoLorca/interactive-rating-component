@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <div id="mainComponent" class="component">
+      <div id="mainComponent" class="component hidden">
         <div class="component__img">
           <img src="./assets/img/icon-star.svg" alt="" />
         </div>
@@ -47,7 +47,19 @@
         </div>
         <button id="button">SUBMIT</button>
       </div>
-      <div id="thanksYou" class="componentThanksyou hidden"></div>
+      <div id="thanksYou" class="componentThanksyou">
+        <img src="./assets/img/illustration-thank-you.svg" alt="" />
+        <div class="componentThanksyou__rateSelected">
+          <p>You selecter 4 out of 5</p>
+        </div>
+        <div class="componentThanksyou__textsBox">
+          <h2>Thanks you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don't hesitate to get in touch!
+          </p>
+        </div>
+      </div>
     </main>
     <script src="./assets/js/app.js"></script>
   </body>
