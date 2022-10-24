@@ -41,6 +41,10 @@ ul {
   display: none !important;
 }
 
+.active {
+  background-color: $primary !important;
+}
+
 main {
   height: 100vh;
   display: flex;
@@ -80,7 +84,6 @@ main {
         align-items: center;
 
         button {
-          background-color: transparent;
           background-color: $secondaryVeryDarkBlue;
           cursor: pointer;
           width: 5rem;

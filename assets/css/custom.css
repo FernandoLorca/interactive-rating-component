@@ -38,6 +38,10 @@ ul {
   display: none !important;
 }
 
+.active {
+  background-color: #fb7413 !important;
+}
+
 main {
   height: 100vh;
   display: flex;
@@ -82,7 +86,6 @@ main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox
   align-items: center;
 }
 main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox-numbers button {
-  background-color: transparent;
   background-color: #121417;
   cursor: pointer;
   width: 5rem;
@@ -93,7 +96,7 @@ main .compoment__rates .compoment__rates--numberBox .compoment__rates--numberBox
 }
 main button {
   padding: 1rem 0;
-  background-color: hsl(25deg, 97%, 53%);
+  background-color: #fb7413;
   border: none;
   border-radius: 100px;
   color: white;

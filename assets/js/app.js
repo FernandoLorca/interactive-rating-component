@@ -7,7 +7,19 @@ const rates = document.querySelectorAll(
   ".compoment__rates--numberBox-numbers > button"
 );
 
-button.addEventListener("click", () => {
-  thanksComponent.classList.remove("hidden");
-  mainComponent.classList.add("hidden");
+const checkActive = (e, activeRate = rates) => {
+  activeRate.forEach(mov => {
+    mov.classList.remove("active");
+  });
+
+  if (e.classList.contains("active")) {
+    return e.classList.remove("active");
+  }
+};
+
+rates.forEach((mov, i, arr) => {
+  mov.addEventListener("click", () => {
+    checkActive(mov);
+    mov.classList.add("active");
+  });
 });
