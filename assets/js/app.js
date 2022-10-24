@@ -6,6 +6,7 @@ const button = document.getElementById("button");
 const rates = document.querySelectorAll(
   ".compoment__rates--numberBox-numbers > button"
 );
+const rateChoosen = document.getElementById("rateChoosen");
 
 //RATES FUNCTIONALITY
 //check that no rate have the active class on
@@ -33,8 +34,27 @@ rates.forEach((mov) => {
   });
 });
 
+//thankyou rate functionality
+const changeChoosenRate = () => {
+  rateChoosen.textContent = rateValue;
+};
+
 //submit button
-// button.addEventListener("click", () => {
-//   thanksComponent.classList.remove("hidden");
-//   mainComponent.classList.add("hidden");
-// });
+button.addEventListener("click", () => {
+  rates.forEach((mov) => {
+    if (mov.classList.contains("active")) {
+      thanksComponent.classList.remove("hidden");
+      mainComponent.classList.add("hidden");
+      changeChoosenRate();
+    } else {
+      button.textContent = "Choose a rate before submit";
+      button.style.backgroundColor = "#7c8798";
+      button.style.cursor = "no-drop";
+      setTimeout(() => {
+        button.textContent = "SUBMIT";
+        button.style.backgroundColor = "#fb7413";
+        button.style.cursor = "pointer";
+      }, 2000);
+    }
+  });
+});

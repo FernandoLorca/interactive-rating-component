@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <div id="mainComponent" class="component hidden">
+      <div id="mainComponent" class="component">
         <div class="component__img">
           <img src="./assets/img/icon-star.svg" alt="" />
         </div>
@@ -47,10 +47,10 @@
         </div>
         <button id="button">SUBMIT</button>
       </div>
-      <div id="thanksYou" class="componentThanksyou">
+      <div id="thanksYou" class="componentThanksyou hidden">
         <img src="./assets/img/illustration-thank-you.svg" alt="" />
         <div class="componentThanksyou__rateSelected">
-          <p>You selecter 4 out of 5</p>
+          <p>You selecter <span id="rateChoosen">4</span> out of 5</p>
         </div>
         <div class="componentThanksyou__textsBox">
           <h2>Thanks you!</h2>
